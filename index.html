@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+    <meta charset="UTF-8" />
+    <script
+      src="https://kit.fontawesome.com/3a35634dfe.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;300&display=swap"
+      rel="stylesheet"
+    />
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div class="page">
+      <div class="searchBar">
+        <form action="/submit">
+          <input
+            type="text"
+            placeholder="Search location"
+            class="location"
+            id="search-bar"
+            autofocus="on"
+            required
+          />
+          <i class="fa-solid fa-location-arrow locationIcon"></i>
+          <input type="submit" class="submit" value="Search" />
+          <input type="submit" class="cancel" value="cancel" />
+        </form>
+      </div>
+
+      <h2></h2>
+
+      <div class="currentDay">
+        <div class="today">
+          <div class="currentTemp"><span> °F / °C </span></div>
+
+          <img class="currentWeather" src="src/images/sun.png" width="100px" />
+
+          <br />
+          <div class="feelsLike">Feels like</div>
+        </div>
+
+        <div class="currentLocation">
+          <div class="city">Honolulu</div>
+          <div class="weatherDescription"></div>
+          <div class="humidity">Humidity 79%</div>
+          <div class="UVindex">UV Index: 0 Low</div>
+        </div>
+      </div>
+      <div class="forecast">
+        <div class="day1">
+          <div class="day1day">Sat</div>
+          <img class="day1weather" src="src/images/sun.png" width="20px" />
+          <div class="day1temp">75°/85°</div>
+        </div>
+        <div class="day2">
+          <div class="day2day">Sun</div>
+          <img class="day2weather" src="src/images/sun.png" width="20px" />
+          <div class="day2temp">75°/85°</div>
+        </div>
+        <div class="day3">
+          <div class="day3day">Mon</div>
+          <img class="day3weather" src="src/images/sun.png" width="20px" />
+          <div class="day3temp">75°/85°</div>
+        </div>
+        <div class="day4">
+          <div class="day4day">Tue</div>
+          <img class="day4weather" src="src/images/cloud.png" width="50px" />
+          <div class="day4temp">75°/85°</div>
+        </div>
+        <div class="day5">
+          <div class="day5day">Wed</div>
+          <img class="day5weather" src="src/images/cloud.png" width="50px" />
+          <div class="day5temp">75°/85°</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./src/index.js"></script>
+  </body>
+</html>
