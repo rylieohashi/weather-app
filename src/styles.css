@@ -167,3 +167,19 @@ span {
 .day5weather {
   padding-left: 5px;
 }
+
+.code {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.code a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.code a:hover {
+  color: rgba(119, 59, 255, 1);
+}
